@@ -82,6 +82,7 @@ class _topPageState extends State<topPage> {
     final double currentScroll = _scrollController.position.pixels;
     final double delta = MediaQuery.of(context).size.height * 0.20;
 
+
     if (maxScroll - currentScroll <= delta) {
     // if (_scrollController.position.pixels == _scrollController.position.maxScrollExtent) {
       setState(() {

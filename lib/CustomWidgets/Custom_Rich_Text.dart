@@ -226,20 +226,6 @@ class _RichTxtState extends State<RichTxt> {
           .replaceAll(']', '');
     }
 
-    // return Text((finalText ?? "Error").toString(),
-    //     overflow: widget.useoverflow ? TextOverflow.ellipsis : null,
-    //     textAlign: widget.textAlign,
-    //     maxLines: widget.maxlines,
-    //     textScaleFactor: 1,// This will keep your text size constant, when the user changes his device text size,
-    //     style: TextStyle(  fontFamily: 'Ubuntu',
-
-    //       decoration: widget.underlined ? TextDecoration.underline : null,//to underlined a text
-    //       color: widget.color,
-    //       fontSize: widget.fontSize,
-    //       fontWeight: widget.fontWeight,
-    //       fontStyle: widget.fontStyle,
-    //       // fontFamily: widget.fontFamily,
-    //     ));
     return RichText(
       overflow: widget.useoverflow ? TextOverflow.ellipsis : TextOverflow.visible,
       textAlign: widget.textAlign ?? TextAlign.start,
